@@ -7,6 +7,7 @@ We offer some special firmwares in this repository.Each special firmware has dif
 
 # How to Update Firmware
 
+The normal firmware can be downloaded from Livox Viewer and special firmware can be downloaded from GitHub: <https://github.com/Livox-SDK/Special-Firmwares-for-Livox-LiDARs>. Both normal and special firmware can be updated by Livox Viewer as following steps.
 1. Click ‘Open Device Manager’, a page will appear displaying all detected Livox LiDAR
    sensors. Connect the device you want to upgrade.
 
