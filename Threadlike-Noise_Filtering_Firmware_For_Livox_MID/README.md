@@ -19,7 +19,7 @@ Since the return signal itself has a width (typically tens of nanoseconds), the 
 
 **Figure 2:** Possible scenarios of two consecutive returns
 
-![](doc/Possible status of two consecutive returns.png)
+![](doc/Possible\ status\ of\ two\ consecutive\ returns.png)
 
 In case (1), the distance between A and B is large enough so that the two generated returns are separated completely. As for case (2), the distance between A and B is shorter and the two returns are combined, but we can still identify both of them. However, in case (3), when the two objects are very close to each other (e.g. less than 1 m), we can hardly distinguish the combined signal from single return signals.
 
