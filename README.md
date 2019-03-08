@@ -1,5 +1,5 @@
 # Special-Firmwares-for-Livox-LiDARs
-We offer some special firmwares in this repository.Each special firmware has different characteristics, such as multiple echoes, enhanced denoising capabilities, and so on. We try to be compatible with the Livox SDK, but there may be differences in some of the communication details. Please check the documentation for each special firmware to make sure it is used correctly.Please read the documentation for each firmware carefully to verify that this is the feature you need before upgrading the special firmware.
+We offer some special firmwares in this repository. Each special firmware has different characteristics, such as multiple echoes, enhanced denoising capabilities, and so on. We try to be compatible with the Livox SDK, but there may be differences in some of the communication details. Please check the documentation for each special firmware to make sure it is used correctly. Please read the documentation for each firmware carefully to verify that this is the feature you need before upgrading the special firmware.
 
 # Official Q&A site
 
