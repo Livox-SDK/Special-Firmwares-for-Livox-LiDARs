@@ -13,13 +13,13 @@ Laser beams are confined in a rather narrow cone, but still have a finite diverg
 
 **Figure 1:** Illustration of multiple returns of one laser beam
 
-![](doc/multiple&#32;returns&#32;of&#32;one&#32;laser&#32;beam.png)
+![](doc/1.png)
 
 Since the return signal itself has a width (typically tens of nanoseconds), the consecutive returns may not always be separated, as shown below:
 
 **Figure 2:** Possible scenarios of two consecutive returns
 
-![](doc/Possible&#32;status&#32;of&#32;two&#32;consecutive&#32;returns.png)
+![](doc/2.png)
 
 In case (1), the distance between A and B is large enough so that the two generated returns are separated completely. As for case (2), the distance between A and B is shorter and the two returns are combined, but we can still identify both of them. However, in case (3), when the two objects are very close to each other (e.g. less than 1 m), we can hardly distinguish the combined signal from single return signals.
 
@@ -27,7 +27,7 @@ The misclassified signals in case (3) result in a special/inaccurate depth, norm
 
 **Figure 3:** An example of noise points caused by combined signals
 
-![](doc/An&#32;example&#32;of&#32;noise&#32;points&#32;caused&#32;by&#32;combined&#32;signals.png)
+![](doc/3.png)
 
 In this example, A is a pillar in front of a wall B. Because the pillar is very close to the wall, the noise points discussed above appear in zone C, in the middle of A and B.
 
@@ -67,7 +67,7 @@ Once the noise filtering firmware is activated, the noise points caused by signa
 
 **Figure 4:** An example of indoor scene before and after filtering
 
-![](doc/An&#32;example&#32;of&#32;indoor&#32;scene&#32;before&#32;and&#32;after&#32;filtering.png)
+![](doc/4.png)
 
 It can be seen that most of the flying noise points are removed by filtering and a much cleaner point cloud is achieved.
 
@@ -77,6 +77,6 @@ It can be seen that most of the flying noise points are removed by filtering and
 
    **Figure 5:** Illustration of incorrectly filtered normal points
 
-   ![](doc/wrongly&#32;filtered&#32;normal&#32;points.png)
+   ![](doc/5.png)
 
 In the example above, some of the ground points are eliminated from the point cloud.

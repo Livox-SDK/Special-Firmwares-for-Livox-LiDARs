@@ -5,6 +5,14 @@ We offer some special firmwares in this repository. Each special firmware has di
 
 <https://groups.google.com/forum/#!forum/livox-lidars>
 
+# Special Firmwares
+
+- [Multi-return Firmware](Multi-return_Firmware_For_Livox_MID/README.md)
+
+- [Threadlike-Noise Filtering Firmware](Threadlike-Noise_Filtering_Firmware_For_Livox_MID/README.md)
+
+- [Short-blind-zone Firmware](Short-blind-zone_Firmware_For_Livox_MID/README.md)
+
 # How to Update Firmware
 
 The normal firmware can be downloaded from Livox Viewer and special firmware can be downloaded from GitHub: <https://github.com/Livox-SDK/Special-Firmwares-for-Livox-LiDARs>. Both normal and special firmware can be updated by Livox Viewer as following steps.
