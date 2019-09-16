@@ -23,7 +23,7 @@ Another example is shown in figure 2, where the laser beam hits the wall through
 
 ## 2. Firmware Info
 
-Double Return Version:
+Dual Return Version:
 
 | Name              | LIVOX_MID_FW_03.03.0001.bin      |
 | ----------------- | -------------------------------- |
@@ -45,23 +45,27 @@ Triple Return Version:
 
 Due to communication bandwidth limitations, the sampling frequency of multi-return firmware is different from normal firmware shown as below:
 
-| Firmware           | Normal Version | Double Return Version | Triple Return Version |
-| ------------------ | :------------: | :-------------------: | :-------------------: |
-| Sampling Frequency |     100KHz     |        100KHz         |         60KHz         |
-| Point Frequency    |     100KHz     |        200KHz         |        180KHz         |
+| Firmware           | Normal Version | Dual Return Version | Triple Return Version |
+| ------------------ | :------------: | :-----------------: | :-------------------: |
+| Sampling Frequency |     100KHz     |       100KHz        |         60KHz         |
+| Point Frequency    |     100KHz     |       200KHz        |        180KHz         |
 
 The packet format of point cloud data of multi-return firmware is different from normal firmware. In order to distinguish the depth between different return calculations, the reflectivity of the first return is the reflectivity value of the object itself, and the reflectivity value of the second return is set to a fixed value of 200 (its color in the Livox Viewer is Orange), the reflectivity value of the third return is set to a fixed value of 250(its color in the Livox Viewer is Red). The header of point cloud data packet (first 11 bytes of the packet)
 is the same as normal firmware (refer to the page 9 and 10 of [Livox SDK Communication Protocol](https://www.livoxtech.com/3296f540ecf5458a8829e01cf429798e/downloads/Livox%20SDK%20Communication%20Protocol_EN_20190117.pdf)).
 
-**Double Return Point Cloud Data**
+**Dual Return Point Cloud Data**
 
-Each packet contains 100 point cloud data, including the first return and the second return of 50 samples. If no multiple returns are detected, the corresponding point data will be set to 0. Timestamp in header of point data packet indicating the time of the first point in the packet. The sampling frequency is 100 KHz, so the time interval of each pulse is 10 us. Point cloud data format is shown as below:
+Each packet contains 100 point cloud data, including the first return and the second return of 50 samples. If no multiple returns are detected, the corresponding point data will be set to 0. 
+
+Timestamp in header of point data packet indicating the time of the first point in the packet. The sampling frequency is 100 KHz, so the time interval of each pulse is 10 us. Point cloud data format is shown as below:
 
 ![](doc/dual_point_cloud.png)
 
 **Triple Return Point Cloud Data:**
 
-Each packet contains 100 point cloud data, including the first return, the second return and the third return of 34 samples. So the 34th sampling have no second return and third return data. If no multiple returns are detected, the corresponding point data will be set to 0. Time stamp indicating the time of the first point in the packet. The sampling frequency is 60 KHz , so the time interval of each pulse is 16.666 us.
+Each packet contains 100 point cloud data, including the first return, the second return and the third return of 34 samples. So the 34th sampling have no second return and third return data. If no multiple returns are detected, the corresponding point data will be set to 0. 
+
+Time stamp indicating the time of the first point in the packet. The sampling frequency is 60 KHz , so the time interval of each pulse is 1000/60 ≈ 16.666 us.
 
 ![](doc/triple_point_cloud.png)
 
@@ -75,18 +79,17 @@ For a single laser firing, the normal firmware only reports the first return, wh
 
 ![](doc/figure3.png)
 
-**Figure 4:** using the multi-return firmware(double return version)
+**Figure 4:** using the multi-return firmware(dual return version)
 
 ![](doc/figure4.png)
 
-As shown in figure 5, 6, 7 below, a piece of glass is placed in front of the Livox LiDAR. The normal firmware only calculates the depth of the glass. The multi-return firmware (double return version) can not only calculate the depth of the glass, but also the depth of the wall behind. The multi-return firmware (triple return version)can report additional information of another piece of glass in between.
+As shown in figure 5, 6, 7 below, a piece of glass is placed in front of the Livox LiDAR. The normal firmware only calculates the depth of the glass. The multi-return firmware (dual return version) can not only calculate the depth of the glass, but also the depth of the wall behind. The multi-return firmware (triple return version)can report additional information of another piece of glass in between.
 
 **Figure 5:** using the normal firmware
 
 ![](doc/figure5.png)
 
-
-**Figure 6:** using the multi-return firmware(double return version)
+**Figure 6:** using the multi-return firmware(dual return version)
 
 ![](doc/figure6.png)
 
