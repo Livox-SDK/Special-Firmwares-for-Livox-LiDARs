@@ -27,17 +27,17 @@ Dual Return Version:
 
 | Name              | LIVOX_MID_FW_03.03.0001.bin      |
 | ----------------- | -------------------------------- |
-| Version           | v03.03.0001                      |
+| Version           | v03.03.0006                      |
 | Compatible Models | Mid-40/Mid- 100                  |
-| MD5               | 424E021858A2521D200FE6D2A422F90A |
+| MD5               | 9FA06C83017A42E2A05EBB92CD51FAD8 |
 
 Triple Return Version:
 
 | Name              | LIVOX_MID_FW_03.03.0002.bin     |
 | ----------------- | ------------------------------- |
-| Version           | v03.03.0002                     |
+| Version           | v03.03.0007                     |
 | Compatible Models | Mid-40/Mid- 100                 |
-| MD5               | E7B618CE4CC5349F5F0090638F7B04B |
+| MD5               | 127422191552BF771D49BF65D7A31323 |
 
 
 
